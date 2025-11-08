@@ -1,0 +1,14 @@
+From Jony:
+
+Q: how do you feel abt the problem of just "these mechanics are interesting but hard to actually design puzzles around" as a reason [not to make a puzzle game]
+
+A: As long as your motivation isn't to quiz the player in an unfair/unjust way (easy, surprising puzzles are good!)... think about why you find these mechanics interesting, not just why players should find them interesting. Adam Saltsman's talk describes this process in a much better way than I could
+
+
+
+Going back through the VOD of my talk ("Silly reasons to not make a puzzle game")... I misheard one of Joseph Manfield's questions 😄 I didn't hear "not"...
+So here's an answer to the question:
+
+Q: You talked about silly reasons for not making a puzzle game. What are some good reasons you've had for *not* making a puzzle game? Or are there any, is the moral of this talk that actually, maybe there aren't any good reasons for *not* making a puzzle game?
+
+A: My personal number one good reason for not making a puzzle game is that I feel obligated to. I've got a bad habit of undervaluing silence, or of underappreciating silence... I'm slowly getting better at recognizing when a creative project would burn me out, versus when it'd be healing to push through discomfort. Listening to my early music, or playing through early attempts at level design... it was good skill-building, but the art itself never shakes the feeling of obligation.

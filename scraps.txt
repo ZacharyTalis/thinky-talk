@@ -1,0 +1,132 @@
+# Silly reasons to not make a puzzle game
+
+This talk describes various silly reasons to abandon a puzzle game idea.
+Many a puzzle is scrapped for lack of structure by which to become a game. These "systems that could never be games" map poorly onto thinky (and in particular, sokoban) expectations. By dissecting our baggage as game designers and players, we can approach a richer understanding of what games are possible to make.
+Topics of discussion include: wordless games and the necessity of word-ful puzzle games, undo stack management, solution extractions, and the "no musical bird" problem.
+
+## Background
+- 0PLAYER
+    - During dev, we were constantly like "this is low-hanging fruit". And so this talk stems from that. "Why are there no aliens" problem: clearly more games like this should exist! So we dissected our own hurdles to making 0PLAYER.
+
+## Motivations
+- The goal of this talk is to demonstrate by example that TK
+- As designers, we're not doing ourselves any favors when we TK
+- "This is not financial advice": the best way to make a game is slowly, which isn't profitable
+- Two types of reason in this talk: personal motivations, and "games that should exist but don't"
+- So much of design is pruning bad ideas: don't let these be your justifications for pruning. By giving you less ways to prune ideas... This talk will make your life harder. By giving you less excuses to throw away ideas...
+
+Something about writing puzzle ideas down in words so that they're concrete
+
+Something about false obligations, like a boat throwing luggage overboard to go further? Unpacking luggage
+
+Talk about Cobalt Core: it throws out meta-progression, you can feasibly beat the game on the first try, and the game has an end goal (so it doesn't go on forever). It is explicitly less game than the typical roguelite.
+
+"vestigial" mechanics
+
+These are all misconceptions I've had at some point
+
+We're in the business of making new things, and that's always going to take a while.
+
+Unchecked assumptions
+
+Exceedingly light spoilers
+
+## Reasons
+
+### "Impossible to extract"
+- Would need some "external apparatus" to verify the player's solution/understanding
+- Anti-pattern
+- Puzzlehunts
+- "Index-bashing": going through the permutations of possible extractions and trying each one
+    - A1Z26 is your enemy
+- "Pointing affordances": "this is the only cool thing I could do, so I tried it and accidentally got the solution"
+- Think broader about what an extraction entails, or what types of solutions count as extractions
+- Sometimes, it's impossible for a computer to check the solution to an interesting problem
+    - Talk Zachtronics, TTRPG DM, self-expression games (Chicory etc)
+- Lack of an ability to check solved state != the game is less curated / "too post-modern". There is a set of games which is best played on a computer, that the computer cannot verify solutions for
+    - If you have a sense for how much work goes into a large-scale piece of art, then you can use this to avoid "stopping too soon". Also, write down your goals so you can remember what you're trying to achieve, as long as you don't attach permanence to the goals
+- Let the player judge their own success
+
+### "Solutions are non-unique"
+- Non-unique or disambiguable
+- Talk about penpa
+- https://pzprxs.vercel.app/rules.html?firewalk
+- The Witness
+
+### "Wouldn't quiz the player enough"
+- Just needs to be surprising, not a quiz. And "aha!" != surprise
+- Your game is not obligated to be a quiz
+- Simulating and showcasing cool interactions is often "enough"
+- End of gameplay?
+- Storyteller
+
+### "Lacks a twist"
+- Often tied to wanting to quiz the player, or break their expectations
+- A game designed around a twist undermines its own confidence
+- What your ending needs to do instead is to TK
+
+### "No musical bird"
+- "I want to make a {sokoban} where...": puzzle games take many forms, let the systems speak in their own terms
+    - It can feel like sokoban mechanics are the "lowest level" your systems exist in, but that's usually untrue. "Puzzle genre baggage"
+    - In fact, it's exceedingly rare for systems to work well as sokobans
+- Sokobans are a "thick brush" to paint with
+- Within scope, your game does not have to control the same from beginning to end
+- "The difficulty of notating a vocal line that preserves the integrity of spoken words is not a small one, but neither is it insurmountable (see chapter on Notation), and the compensations are large. Few orthodox musicians would call such vocal lines "musical," and Combarieu declares that the songs of birds are not "musical" either, because they are "very difficult to take down in notation." See his *Music—Its Laws and Evolution*, 155. Will some divine power please create a "musical" bird to sing the Air for G String in exact Equal Temperament for M. Combarieu?" -- Harry Partch, `Genesis of a Music (2nd ed.), 45-46`
+
+#### Sokoban genre expectations
+The "smallest version of your game" isn't actually that small if it implements all these features:
+(rework to be less about expectations and more about the typical first prototype of a sokoban)
+1. Square grid movement
+2. Player character
+3. Solutions are sequences of directional inputs
+5. Player pushes crates
+6. Walls block player and crates
+7. Interactions take place in a world of physics
+8. Linear, discrete time, with dead-end states
+9. Undo stack management
+10. Levels end immediately once solved
+11. Difficulty increases throughout game
+12. Final difficulty is quite high
+13. Very few words, if any
+14. Ambient music, pleasant visuals
+15. Multi-agent, ice sliding, crumble floor, polyominoes, death states, secretly 3D, inter-level meta...
+
+0PLAYER is only possible because of this list.
+
+### "Doesn't work without words"
+- Everyone's on their own path through the genre (diagram of wavy paths of different lengths merging): puzzles are full of subtle prerequisites
+- That's fine, give them words. Artist statements exist for a reason
+- At the same time, "no qualifiers!" -- Mental Graffiti
+    - Presenting concepts in natural terms means your game contains less "hesitation"/qualifiers
+- Distrust in the player
+    - Example of boardgame dev who wanted players to have things to do on everyone's turn, to stop them from looking at phones. What is your domain as a designer?
+- VIVIDLOPE as an example of a game which gives text tutorials throughout the game, allowing the game to escalate. Beginning of game != only time for text tutorials
+
+### "Undo stack management too futzy"
+- 0PLAYER
+- [Trifolium](https://store.steampowered.com/app/3350860/Trifolium_The_Adventures_of_Gary_Pretzelneck/)
+- [Jack's Sokoban](https://jackkutilek.itch.io/sokoban)
+- Puzzle games with note-taking
+- "Designing to reveal the nature of the undo stack" -- Katelyn Δ
+
+### "Motivated by spite"
+- "I am surprised that among so many rare minds who would have done this much better than I, there was no one who had the patience to unravel these things and that they almost all imitated those travelers who leaving the main road to take a crossroad remain lost in the brambles and precipices." -- René Descartes, `Meditations on First Philosophy`, as translated by John Cottingham
+
+### "Afraid of edge cases"
+- Either a wonderful problem to have, or your systems aren't rigorous
+- The tools that would let a player debug/examine/pick apart edge cases are good tools to have in your game
+    - This may come with adding animations to your game
+    - The Sekimeiya: Spun Glass
+    - Fighting game training modes / frame timings / manuals (Rivals)
+- 0PLAYER door timing
+
+### "Induces analysis paralysis"
+- Extremely common excuse in boardgame design
+- Overly concerned with player discomfort
+    - What does it mean to be *overly* concerned?
+
+### "Requires pre-existing trust"
+- Address "well poisoning" head-on by being a positive example
+    - First playthrough of The Witness is uncanny
+- Oftentimes, right now is the first time a game could ever be made
+- We aren't going to push the medium forward without assuming the player trusts the designer on some base level.
